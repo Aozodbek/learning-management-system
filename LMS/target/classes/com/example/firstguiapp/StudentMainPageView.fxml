@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstguiapp.StudentMainPage">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="1920.0" style="-fx-background-color: #152238;">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="105.0" layoutY="103.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
