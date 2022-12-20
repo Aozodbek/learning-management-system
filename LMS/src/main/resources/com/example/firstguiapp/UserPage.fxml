@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Circle fill="DODGERBLUE" layoutX="70.0" layoutY="62.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label layoutX="131.0" layoutY="41.0" text="Name" />
+        <Label layoutX="131.0" layoutY="60.0" text="Surname" />
+        <Label layoutX="131.0" layoutY="79.0" prefWidth="78.0" text="Last name" />
+        <TextArea layoutX="300.0" layoutY="123.0" prefHeight="200.0" prefWidth="238.0" text="Summary:" />
+        <TextField layoutX="95.0" layoutY="247.0" prefHeight="25.0" prefWidth="119.0" text="Nozim Nizomov" />
+        <Label layoutX="29.0" layoutY="119.0" text="Email: 2110xxx@newuzbekistanuniversity.uz" />
+        <Label layoutX="53.0" layoutY="145.0" text="Department: Software engineering" />
+        <Label layoutX="47.0" layoutY="171.0" text="Passport series, number: AA 1234567" />
+        <Label layoutX="46.0" layoutY="197.0" text="Phone number.: +998(9X) XXX-XX-XX" />
+        <Label layoutX="46.0" layoutY="223.0" text="Parent information:" />
+        <Label layoutX="46.0" layoutY="250.0" text="Father:" />
+        <Label layoutX="46.0" layoutY="277.0" text="Mother:" />
+        <TextField layoutX="95.0" layoutY="274.0" prefHeight="25.0" prefWidth="119.0" text="Nozima Nizomova" />
+        <Button layoutX="293.0" layoutY="342.0" mnemonicParsing="false" text="Edit &amp; Update" />
+        <Button layoutX="492.0" layoutY="338.0" mnemonicParsing="false" text="Cancel" />
+    </children>
+</AnchorPane>
