@@ -7,7 +7,6 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -17,17 +16,9 @@ public class HelloController {
     @FXML
     private Button loginButton;
     @FXML
-    private  Button regButton;
-    @FXML
-    private Label welcomeText;
-    @FXML
     private TextField loginText;
     @FXML
     private PasswordField passwordField;
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
 
     @FXML
     protected void loginSystem() throws IOException {
@@ -38,8 +29,6 @@ public class HelloController {
             warningMessage="Access denied !";
 
         }
-
-        //https://github.com/sdjuraev/CS211LABWEEK74.git
 
         boolean status=false;
         File file=new File("logins.txt");
@@ -67,7 +56,7 @@ public class HelloController {
     @FXML
     private void showRegWindow() throws IOException {
         Stage stage=new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("registrationform.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("registration.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Registration form");
