@@ -19,6 +19,5 @@ public class NotificationView extends Application {
         stage.setTitle("Timetable");
         stage.setScene(scene);
         stage.show();
-
     }
 }
