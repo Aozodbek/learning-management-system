@@ -37,7 +37,8 @@ public class HelloController {
             while (scanner.hasNext()) {
                 String[] loginpassword=scanner.nextLine().split(" ");
                 if (loginpassword[0].equals(loginText.getText())&&loginpassword[1].equals(passwordField.getText())){
-                    System.out.println("Login successful");
+                    if (loginText.getText().equals("admin")) showAdminMainPage();
+                    else showStudentMainPage();
                     status=true;
                 }
             }
@@ -62,7 +63,28 @@ public class HelloController {
         stage.setTitle("Registration form");
         stage.setAlwaysOnTop(true);
         stage.show();
+    }
 
+    @FXML
+    private void showAdminMainPage() throws IOException {
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("admin-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.setTitle("Registration form");
+        stage.setAlwaysOnTop(true);
+        stage.show();
+    }
+
+    @FXML
+    private void showStudentMainPage() throws IOException {
+        Stage stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("StudentMainPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.setTitle("Registration form");
+        stage.setAlwaysOnTop(true);
+        stage.show();
     }
 
 }
