@@ -10,7 +10,7 @@
     <children>
         <ImageView fitHeight="275.0" fitWidth="410.0" layoutX="21.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../Image/img1.png" />
+                <Image url="@../../../../../Image/img.png" />
             </image>
         </ImageView>
         <Button layoutX="429.0" layoutY="70.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="138.0" text="Notification">
@@ -21,6 +21,6 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </Button>
-    </children>
 
+    </children>
 </AnchorPane>
