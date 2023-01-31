@@ -1,4 +1,4 @@
 package com.example.firstguiapp;
 
-public class UserPageNEW {
+public class UserPage {
 }
