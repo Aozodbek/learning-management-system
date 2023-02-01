@@ -13,7 +13,7 @@
                   <Font name="Arial Rounded MT Bold" size="40.0" />
                </font>
             </Label>
-            <Button fx:id="Button1" onAction="#Button1" layoutX="486.0" layoutY="46.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" style="-fx-background-color: #97b1bd;" text="BACK" textFill="WHITE">
+            <Button fx:id="Button1" layoutX="486.0" layoutY="46.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="51.0" style="-fx-background-color: #97b1bd;" text="BACK" textFill="WHITE">
                <font>
                   <Font name="Arial Black" size="11.0" />
                </font>

@@ -57,7 +57,7 @@ public class HelloController {
     @FXML
     private void showRegWindow() throws IOException {
         Stage stage=new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("registration.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("registrationform.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Registration form");
