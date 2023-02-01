@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.MotionBlur?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002045" height="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
       <Circle fill="DODGERBLUE" layoutX="58.0" layoutY="14.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
@@ -86,15 +84,15 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055e13" height="6.0" layoutX="265.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055e13" height="6.0" layoutX="421.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055e13" height="6.0" layoutX="421.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
-      <Label layoutX="94.0" layoutY="419.0" text="Schedule" />
-      <Label layoutX="278.0" layoutY="419.0" text="Payment" />
-      <Label layoutX="455.0" layoutY="419.0" text="Courses" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002045" height="28.0" layoutX="103.0" layoutY="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="37.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002045" height="28.0" layoutX="285.0" layoutY="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="37.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002045" height="28.0" layoutX="461.0" layoutY="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="37.0" />
+      <Label layoutX="100.0" layoutY="419.0" text="Schedule" />
+      <Label layoutX="280.0" layoutY="419.0" text="Payment" />
+      <Label layoutX="459.0" layoutY="419.0" text="Courses" />
       <Label layoutX="223.0" layoutY="228.0" text="10" />
       <Label layoutX="226.0" layoutY="280.0" text="5" />
       <Label layoutX="511.0" layoutY="228.0" text="8" />
       <Label layoutX="510.0" layoutY="280.0" text="#" />
+      <Button layoutX="114.0" layoutY="379.0" mnemonicParsing="false" />
+      <Button layoutX="295.0" layoutY="379.0" mnemonicParsing="false" />
+      <Button layoutX="472.0" layoutY="379.0" mnemonicParsing="false" />
    </children>
 </Pane>
