@@ -1,67 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1146.0" fx:controller="com.example.firstguiapp.StudentMainPage" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="200.0" prefWidth="1920.0" style="-fx-background-color: #122538;">
-         <children>
-            <Line endX="100.0" layoutX="1785.0" layoutY="98.0" startX="40.0" stroke="#007900" />
-            <Line endX="100.0" layoutX="1785.0" layoutY="82.0" startX="40.0" stroke="#007900" />
-            <Line endX="100.0" layoutX="1785.0" layoutY="113.0" startX="40.0" stroke="#007900" />
-         </children>
-      </Pane>
-      <Pane layoutX="262.0" layoutY="473.0" prefHeight="481.0" prefWidth="1388.0" style="-fx-background-color: #dbdbdb;">
-         <children>
-            <Pane layoutX="100.0" layoutY="88.0" prefHeight="305.0" prefWidth="232.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Label layoutX="70.0" layoutY="125.0" text="100%">
-                     <font>
-                        <Font size="38.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane layoutX="578.0" layoutY="88.0" prefHeight="305.0" prefWidth="232.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Line endX="100.0" layoutX="116.0" layoutY="271.0" startX="-100.0" />
-               </children>
-            </Pane>
-            <Pane layoutX="1065.0" layoutY="88.0" prefHeight="305.0" prefWidth="232.0">
-               <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff341f" height="18.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="232.0" />
-                  <Label layoutX="70.0" layoutY="125.0" text="100%">
-                     <font>
-                        <Font size="38.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Label layoutX="163.0" layoutY="56.0" text="Attendance">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Label>
-            <Label layoutX="654.0" layoutY="56.0" text="Progress">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Label>
-            <Label layoutX="1122.0" layoutY="56.0" text="Assignments">
-               <font>
-                  <Font size="21.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <Circle fill="DODGERBLUE" layoutX="358.0" layoutY="255.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002045" height="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Circle fill="DODGERBLUE" layoutX="58.0" layoutY="14.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="87.0" layoutY="5.0" prefHeight="18.0" prefWidth="60.0" text="Student Name" textFill="WHITE">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="8.0" text="Group #" textFill="WHITE">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7a8186" height="12.0" layoutX="249.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="103.0" />
+      <Label layoutX="537.0" layoutY="5.0" text="En" textFill="#d7d4d4" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="110.0" layoutX="60.0" layoutY="53.0" stroke="#e8e8e8" strokeType="INSIDE" strokeWidth="0.0" width="480.0">
+         <effect>
+            <MotionBlur angle="21.18" radius="0.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </MotionBlur>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="90.0" layoutX="111.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="90.0" layoutX="264.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeee" height="90.0" layoutX="421.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="72.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="58.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="340.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="340.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="58.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" layoutX="61.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" layoutX="243.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" layoutX="419.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
    </children>
-</AnchorPane>
+</Pane>

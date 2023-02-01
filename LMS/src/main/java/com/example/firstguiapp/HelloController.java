@@ -71,7 +71,7 @@ public class HelloController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("admin-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
-        stage.setTitle("Registration form");
+        stage.setTitle("Admin Main Page");
         stage.setAlwaysOnTop(true);
         stage.show();
     }
@@ -79,10 +79,10 @@ public class HelloController {
     @FXML
     private void showStudentMainPage() throws IOException {
         Stage stage=new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("StudentMainPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("StudentMainPageView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
-        stage.setTitle("Registration form");
+        stage.setTitle("Student Main Page");
         stage.setAlwaysOnTop(true);
         stage.show();
     }

@@ -13,7 +13,7 @@
                 <Image url="@../../../../../Image/img.png" />
             </image>
         </ImageView>
-        <Button layoutX="429.0" layoutY="70.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="138.0" text="Notification">
+        <Button layoutX="429.0" layoutY="70.0" mnemonicParsing="false" onAction="#btcnotification" prefHeight="40.0" prefWidth="138.0" text="Notification">
             <font>
                 <Font name="Bell MT" size="18.0" />
             </font>
