@@ -75,16 +75,16 @@ public class adminTimetable {
     @FXML
     private TextField subject23;
 
-    String subjects[] = new String[15];
+    String[] subjects = new String[15];
 
-    String colours[] = new String[16];
+    String[] colours = new String[16];
 
     String[] stringArray = new String[15];
 
 
-    String[] subjectFiles = new String[countLines("src/files/subjectSource.csv")];
+    String[] subjectFiles = new String[countLines("files/subjectSource.csv")];
 
-    String[] groups = new String[countLines("src/files/groups.csv")];
+    String[] groups = new String[countLines("files/groups.csv")];
 
     public adminTimetable() throws IOException {
     }
@@ -92,7 +92,7 @@ public class adminTimetable {
 
     protected void displaySchedule() throws FileNotFoundException {
 
-        File colors = new File("src/files/colours.csv");
+        File colors = new File("files/colours.csv");
         Scanner input = new Scanner(colors);
         for (int i = 0; i < colours.length; i++) {
             colours[i] = input.next();
@@ -117,7 +117,7 @@ public class adminTimetable {
         subjects[13] = subject21.getText();
         subjects[14] = subject23.getText();
 
-       // loop for giving the same colour to same subjects
+        // loop for giving the same colour to same subjects
         for (int i = 0; i < subjects.length; i++) {
             for (int j = i + 1; j < subjects.length; j++) {
                 if (subjects[i].equals(subjects[j]))
@@ -203,8 +203,9 @@ public class adminTimetable {
 
 
     }
+
     protected void showChoice() throws FileNotFoundException {
-        File file1 = new File("src/files/subjectSource.csv");
+        File file1 = new File("files/subjectSource.csv");
         Scanner input1 = new Scanner(file1);
         for (int i = 0; i < subjectFiles.length; i++) {
             subjectFiles[i] = input1.next();
@@ -217,7 +218,7 @@ public class adminTimetable {
 
     }
 
-   //method to return index of group
+    //method to return index of group
     protected int getIndex() {
         return choice.getSelectionModel().getSelectedIndex();
 
@@ -225,7 +226,7 @@ public class adminTimetable {
 
     // method to give values array called "groups"
     protected void showGroupsList() throws FileNotFoundException {
-        File groupslist = new File("src/files/groups.csv");
+        File groupslist = new File("files/groups.csv");
         Scanner input = new Scanner(groupslist);
         for (int i = 0; i < groups.length; i++) {
             groups[i] = input.next();
@@ -235,9 +236,9 @@ public class adminTimetable {
     @FXML
     protected void onButton1Clicked(ActionEvent actionEvent) throws FileNotFoundException {
 
-           showGroupsList();
-           showChoice();
-           myButton1.setDisable(true);
+        showGroupsList();
+        showChoice();
+        myButton1.setDisable(true);
 
     }
 
@@ -255,10 +256,11 @@ public class adminTimetable {
         return lines;
     }
 
-    @FXML private Button closeButton;
+    @FXML
+    private Button closeButton;
 
     @FXML
-    private void closeButtonAction(){
+    private void closeButtonAction() {
         // get a handle to the stage
         Stage stage = (Stage) closeButton.getScene().getWindow();
         // do what you have to do
