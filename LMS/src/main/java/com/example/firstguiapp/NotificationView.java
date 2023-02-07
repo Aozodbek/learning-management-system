@@ -5,6 +5,8 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
@@ -19,9 +21,16 @@ public class NotificationView extends Application {
         stage.setTitle("NotificationView");
         stage.setScene(scene);
         stage.show();
+
+    }
+    public void showmessage (){
+        Alert notification = new Alert(Alert.AlertType.INFORMATION, "Don't touch,", ButtonType.CLOSE);
+        notification.show();
     }
 
     public void btcnotification(ActionEvent actionEvent) {
+        Alert notification = new Alert(Alert.AlertType.INFORMATION, "Don't touch,", ButtonType.CLOSE);
+        notification.show();
 
     }
 }
