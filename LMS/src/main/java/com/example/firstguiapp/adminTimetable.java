@@ -92,7 +92,7 @@ public class adminTimetable {
 
     protected void displaySchedule() throws FileNotFoundException {
 
-        File colors = new File("files/colours.csv");
+        File colors = new File("src/files/colours.csv");
         Scanner input = new Scanner(colors);
         for (int i = 0; i < colours.length; i++) {
             colours[i] = input.next();
