@@ -1,26 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" fx:controller="com.example.firstguiapp.UserPage" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <Circle fill="DODGERBLUE" layoutX="70.0" layoutY="62.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
-        <Label layoutX="131.0" layoutY="41.0" text="Name" />
-        <Label layoutX="131.0" layoutY="60.0" text="Surname" />
-        <Label layoutX="131.0" layoutY="79.0" prefWidth="78.0" text="Last name" />
-        <TextArea layoutX="300.0" layoutY="123.0" prefHeight="200.0" prefWidth="238.0" text="Summary:" />
-        <TextField layoutX="95.0" layoutY="247.0" prefHeight="25.0" prefWidth="119.0" text="Nozim Nizomov" />
-        <Label layoutX="29.0" layoutY="119.0" text="Email: 2110xxx@newuzbekistanuniversity.uz" />
-        <Label layoutX="53.0" layoutY="145.0" text="Department: Software engineering" />
-        <Label layoutX="47.0" layoutY="171.0" text="Passport series, number: AA 1234567" />
-        <Label layoutX="46.0" layoutY="197.0" text="Phone number.: +998(9X) XXX-XX-XX" />
-        <Label layoutX="46.0" layoutY="223.0" text="Parent information:" />
-        <Label layoutX="46.0" layoutY="250.0" text="Father:" />
-        <Label layoutX="46.0" layoutY="277.0" text="Mother:" />
-        <TextField layoutX="95.0" layoutY="274.0" prefHeight="25.0" prefWidth="119.0" text="Nozima Nizomova" />
-        <Button layoutX="293.0" layoutY="342.0" mnemonicParsing="false" text="Edit &amp; Update" />
-        <Button layoutX="492.0" layoutY="338.0" mnemonicParsing="false" text="Cancel" />
-    </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00142d" height="480.0" stroke="BLACK" strokeType="INSIDE"
+               width="600.0"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="608.0" layoutX="163.0" layoutY="232.0" stroke="WHITE"
+               strokeType="INSIDE" width="1592.0"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="444.0" layoutX="258.0" layoutY="295.0"
+               stroke="BLACK" strokeType="INSIDE" width="333.0"/>
+    <Button layoutX="345.0" layoutY="1905.0" mnemonicParsing="false" style="-fx-border-color: #055E13;"
+            text="Edit &amp; Update" textFill="#055e13">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Button>
+    <Button layoutX="1252.0" layoutY="1905.0" mnemonicParsing="false" style="-fx-border-color: #055E13;" text="Cancel"
+            textFill="#055e13">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Button>
+    <Text layoutX="716.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Surname Last name">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport details:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone num.:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent information:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="676.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Father:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="716.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mother:">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="828.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="2110XXX@newuzbekistanuniversity.uz">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="932.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Software  Engineering">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="1010.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AA 1234567">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="845.0" layoutY="674.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Nozim Nizomov">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="864.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nozima Nizomova">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <Text layoutX="945.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+998 (9X) XXX-XX-XX">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </Text>
+    <ImageView fitHeight="444.0" fitWidth="333.0" layoutX="258.0" layoutY="295.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <TextArea layoutX="165.0" layoutY="1024.0" prefHeight="781.0" prefWidth="1592.0" promptText="Summary:"
+              style="-fx-border-color: #055E13;">
+        <font>
+            <Font size="40.0"/>
+        </font>
+    </TextArea>
 </AnchorPane>
