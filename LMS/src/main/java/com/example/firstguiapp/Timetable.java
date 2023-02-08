@@ -10,7 +10,7 @@ import java.io.IOException;
 public  class Timetable extends Application{
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminTimetable.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 850, 490);
+        Scene scene = new Scene(fxmlLoader.load(), 825, 490);
         stage.setTitle("Timetable");
         stage.setScene(scene);
         stage.show();
