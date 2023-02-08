@@ -111,10 +111,10 @@ public class adminTimetable {
         subjects[8] = subject12.getText();
         subjects[9] = subject14.getText();
 
-        subjects[10] = subject17.getText();
-        subjects[11] = subject19.getText();
-        subjects[12] = subject20.getText();
-        subjects[13] = subject21.getText();
+        subjects[10] = subject19.getText();
+        subjects[11] = subject21.getText();
+        subjects[12] = subject17.getText();
+        subjects[13] = subject20.getText();
         subjects[14] = subject23.getText();
 
         // loop for giving the same colour to same subjects
@@ -147,11 +147,11 @@ public class adminTimetable {
         subject12.setStyle("-fx-background-color:" + colours[8]);
 
         subject14.setStyle("-fx-background-color: " + colours[9]);
-        subject17.setStyle("-fx-background-color:" + colours[10]);
-        subject19.setStyle("-fx-background-color:" + colours[11]);
+        subject17.setStyle("-fx-background-color:" + colours[12]);
+        subject19.setStyle("-fx-background-color:" + colours[10]);
 
-        subject20.setStyle("-fx-background-color: " + colours[12]);
-        subject21.setStyle("-fx-background-color:" + colours[13]);
+        subject20.setStyle("-fx-background-color: " + colours[13]);
+        subject21.setStyle("-fx-background-color:" + colours[11]);
         subject23.setStyle("-fx-background-color:" + colours[14]);
 
     }
@@ -180,18 +180,18 @@ public class adminTimetable {
         subject8.setText(stringArray[5]);
         //subject9.setText(stringArray[8]);
         subject10.setText(stringArray[6]);
-        subject12.setText(stringArray[7]);
+        subject12.setText(stringArray[8]);
 
-        subject14.setText(stringArray[8]);
+        subject14.setText(stringArray[9]);
         //subject15.setText(stringArray[9]);
         //subject16.setText(stringArray[5]);
-        subject17.setText(stringArray[9]);
-        subject11.setText(stringArray[10]);
-        subject19.setText(stringArray[11]);
-        subject20.setText(stringArray[12]);
-        subject21.setText(stringArray[13]);
+        subject17.setText(stringArray[12]);
+        subject11.setText(stringArray[7]);
+        subject19.setText(stringArray[10]);
+        subject20.setText(stringArray[13]);
+        subject21.setText(stringArray[11]);
         subject23.setText(stringArray[14]);
-        //myChange.setEditable(false);
+
     }
 
 
