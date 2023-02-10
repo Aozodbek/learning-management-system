@@ -31,10 +31,8 @@ public class StudentMainPage {
         Stage stage=new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("UserPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Courses");
+        stage.setTitle("Profile");
         stage.setScene(scene);
         stage.show();
     }
 }
-
-

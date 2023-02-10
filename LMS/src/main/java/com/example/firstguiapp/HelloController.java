@@ -38,6 +38,7 @@ public class HelloController {
                 String[] loginpassword=scanner.nextLine().split(" ");
                 if (loginpassword[0].equals(loginText.getText())&&loginpassword[1].equals(passwordField.getText())){
                     if (loginText.getText().equals("admin")) showAdminMainPage();
+                    else if (loginText.getText().startsWith("prof")) showAdminMainPage(); // prof page
                     else showStudentMainPage();
                     status=true;
                 }
@@ -83,7 +84,8 @@ public class HelloController {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Student Main Page");
-        stage.setAlwaysOnTop(true);
+        stage.setFullScreen(true);
+//        stage.setAlwaysOnTop(true);
         stage.show();
     }
 
