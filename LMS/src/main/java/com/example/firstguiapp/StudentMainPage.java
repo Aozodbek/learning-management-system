@@ -11,8 +11,8 @@ public class StudentMainPage {
 
     public void timetable(ActionEvent actionEvent) throws IOException {
         Stage stage=new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("timetable.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 822, 367);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("adminTimetable.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 850, 490);
         stage.setTitle("Timetable");
         stage.setScene(scene);
         stage.show();
