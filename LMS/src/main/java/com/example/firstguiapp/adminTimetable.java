@@ -20,60 +20,13 @@ public class adminTimetable {
 
 
     @FXML
-    private TextField subject;
+    private TextField subject,subject1,subject2,subject3,subject4,subject5,subject6,subject7,subject8;
 
     @FXML
-    private TextField subject1;
+    private TextField subject9,subject10,subject11,subject12,subject13,subject14,subject15,subject16,subject17;
 
     @FXML
-    private TextField subject2;
-
-    @FXML
-    private TextField subject3;
-
-    @FXML
-    private TextField subject4;
-
-    @FXML
-    private TextField subject5;
-
-    @FXML
-    private TextField subject6;
-
-    @FXML
-    private TextField subject7;
-    @FXML
-    private TextField subject8;
-    @FXML
-    private TextField subject9;
-    @FXML
-    private TextField subject10;
-    @FXML
-    private TextField subject11;
-    @FXML
-    private TextField subject12;
-    @FXML
-    private TextField subject13;
-    @FXML
-    private TextField subject14;
-    @FXML
-    private TextField subject15;
-    @FXML
-    private TextField subject16;
-    @FXML
-    private TextField subject17;
-    @FXML
-    private TextField subject18;
-    @FXML
-    private TextField subject19;
-    @FXML
-    private TextField subject20;
-    @FXML
-    private TextField subject21;
-    @FXML
-    private TextField subject22;
-    @FXML
-    private TextField subject23;
+    private TextField subject18,subject19,subject20,subject21,subject22,subject23;
 
     String[] subjects = new String[15];
 
@@ -81,14 +34,12 @@ public class adminTimetable {
 
     String[] stringArray = new String[15];
 
-
     String[] subjectFiles = new String[countLines("files/subjectSource.csv")];
 
     String[] groups = new String[countLines("files/groups.csv")];
 
     public adminTimetable() throws IOException {
     }
-
 
     protected void displaySchedule() throws FileNotFoundException {
 
@@ -111,10 +62,10 @@ public class adminTimetable {
         subjects[8] = subject12.getText();
         subjects[9] = subject14.getText();
 
-        subjects[10] = subject17.getText();
-        subjects[11] = subject19.getText();
-        subjects[12] = subject20.getText();
-        subjects[13] = subject21.getText();
+        subjects[10] = subject19.getText();
+        subjects[11] = subject21.getText();
+        subjects[12] = subject17.getText();
+        subjects[13] = subject20.getText();
         subjects[14] = subject23.getText();
 
         // loop for giving the same colour to same subjects
@@ -126,6 +77,7 @@ public class adminTimetable {
         }
 
         // loop to assign white colour if the subject is empty
+
         for (int i = 0; i < subjects.length; i++) {
             if (subjects[i].equals(" ")) {
                 colours[i] = colours[15];
@@ -134,6 +86,7 @@ public class adminTimetable {
         }
 
         // giving colour to subjects
+
         subject.setStyle("-fx-background-color: " + colours[0]);
         subject1.setStyle("-fx-background-color:" + colours[1]);
         subject2.setStyle("-fx-background-color:" + colours[2]);
@@ -147,11 +100,11 @@ public class adminTimetable {
         subject12.setStyle("-fx-background-color:" + colours[8]);
 
         subject14.setStyle("-fx-background-color: " + colours[9]);
-        subject17.setStyle("-fx-background-color:" + colours[10]);
-        subject19.setStyle("-fx-background-color:" + colours[11]);
+        subject17.setStyle("-fx-background-color:" + colours[12]);
+        subject19.setStyle("-fx-background-color:" + colours[10]);
 
-        subject20.setStyle("-fx-background-color: " + colours[12]);
-        subject21.setStyle("-fx-background-color:" + colours[13]);
+        subject20.setStyle("-fx-background-color: " + colours[13]);
+        subject21.setStyle("-fx-background-color:" + colours[11]);
         subject23.setStyle("-fx-background-color:" + colours[14]);
 
     }
@@ -180,18 +133,18 @@ public class adminTimetable {
         subject8.setText(stringArray[5]);
         //subject9.setText(stringArray[8]);
         subject10.setText(stringArray[6]);
-        subject12.setText(stringArray[7]);
+        subject12.setText(stringArray[8]);
 
-        subject14.setText(stringArray[8]);
+        subject14.setText(stringArray[9]);
         //subject15.setText(stringArray[9]);
         //subject16.setText(stringArray[5]);
-        subject17.setText(stringArray[9]);
-        subject11.setText(stringArray[10]);
-        subject19.setText(stringArray[11]);
-        subject20.setText(stringArray[12]);
-        subject21.setText(stringArray[13]);
+        subject17.setText(stringArray[12]);
+        subject11.setText(stringArray[7]);
+        subject19.setText(stringArray[10]);
+        subject20.setText(stringArray[13]);
+        subject21.setText(stringArray[11]);
         subject23.setText(stringArray[14]);
-        //myChange.setEditable(false);
+
     }
 
 
@@ -244,8 +197,6 @@ public class adminTimetable {
 
     //count lines of file to produce size to arrays
     protected int countLines(String file1) throws IOException {
-
-
         int lines = 0;
 
         FileReader file = new FileReader(file1);
@@ -261,9 +212,7 @@ public class adminTimetable {
 
     @FXML
     private void closeButtonAction() {
-        // get a handle to the stage
         Stage stage = (Stage) closeButton.getScene().getWindow();
-        // do what you have to do
         stage.close();
     }
 }
